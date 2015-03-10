@@ -31,11 +31,22 @@
                                 <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kop-eg-aPQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title=" " image="stopButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="U9P-We-pVG"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="mS5-De-rGI" secondAttribute="centerX" id="2df-CS-gOT"/>
                             <constraint firstAttribute="centerY" secondItem="mS5-De-rGI" secondAttribute="centerY" id="3UL-Xk-dVc"/>
+                            <constraint firstAttribute="centerX" secondItem="kop-eg-aPQ" secondAttribute="centerX" id="BIt-S6-fdc"/>
+                            <constraint firstItem="kop-eg-aPQ" firstAttribute="top" secondItem="ZJI-OY-rS8" secondAttribute="bottom" constant="82" id="msc-Qk-huy"/>
                             <constraint firstAttribute="centerX" secondItem="ZJI-OY-rS8" secondAttribute="centerX" id="njD-Ly-giv"/>
                             <constraint firstItem="ZJI-OY-rS8" firstAttribute="top" secondItem="mS5-De-rGI" secondAttribute="bottom" constant="21" id="v46-ZK-Jks"/>
                         </constraints>
@@ -43,24 +54,30 @@
                             <mask key="subviews">
                                 <exclude reference="mS5-De-rGI"/>
                                 <exclude reference="ZJI-OY-rS8"/>
+                                <exclude reference="kop-eg-aPQ"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2df-CS-gOT"/>
                                 <exclude reference="3UL-Xk-dVc"/>
                                 <exclude reference="njD-Ly-giv"/>
                                 <exclude reference="v46-ZK-Jks"/>
+                                <exclude reference="BIt-S6-fdc"/>
+                                <exclude reference="msc-Qk-huy"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mS5-De-rGI"/>
                                 <include reference="ZJI-OY-rS8"/>
+                                <include reference="kop-eg-aPQ"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2df-CS-gOT"/>
                                 <include reference="3UL-Xk-dVc"/>
                                 <include reference="njD-Ly-giv"/>
                                 <include reference="v46-ZK-Jks"/>
+                                <include reference="BIt-S6-fdc"/>
+                                <include reference="msc-Qk-huy"/>
                             </mask>
                         </variation>
                     </view>
@@ -74,5 +91,6 @@
     </scenes>
     <resources>
         <image name="microphone" width="100" height="100"/>
+        <image name="stopButton" width="50" height="50"/>
     </resources>
 </document>
