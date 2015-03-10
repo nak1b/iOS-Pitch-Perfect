@@ -21,32 +21,52 @@
                                 <state key="normal" image="microphone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Vk-h7-Pvh"/>
+                                </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJI-OY-rS8">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <color key="textColor" red="0.14509803921568626" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="mS5-De-rGI" secondAttribute="centerX" id="2df-CS-gOT"/>
                             <constraint firstAttribute="centerY" secondItem="mS5-De-rGI" secondAttribute="centerY" id="3UL-Xk-dVc"/>
+                            <constraint firstAttribute="centerX" secondItem="ZJI-OY-rS8" secondAttribute="centerX" id="njD-Ly-giv"/>
+                            <constraint firstItem="ZJI-OY-rS8" firstAttribute="top" secondItem="mS5-De-rGI" secondAttribute="bottom" constant="21" id="v46-ZK-Jks"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mS5-De-rGI"/>
+                                <exclude reference="ZJI-OY-rS8"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2df-CS-gOT"/>
                                 <exclude reference="3UL-Xk-dVc"/>
+                                <exclude reference="njD-Ly-giv"/>
+                                <exclude reference="v46-ZK-Jks"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mS5-De-rGI"/>
+                                <include reference="ZJI-OY-rS8"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2df-CS-gOT"/>
                                 <include reference="3UL-Xk-dVc"/>
+                                <include reference="njD-Ly-giv"/>
+                                <include reference="v46-ZK-Jks"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="recordingInProgress" destination="ZJI-OY-rS8" id="PxE-xK-eqs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
