@@ -17,20 +17,9 @@ class PlaySoundsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if var filePath = NSBundle.mainBundle().pathForResource("movie_quote", ofType: "mp3"){
-            //converting filepath which is string to type NSUrl
-            var filePathUrl = NSURL.fileURLWithPath(filePath)
-            
-            //Initialing audioplayer with filepath
-            audioPlayer = AVAudioPlayer(contentsOfURL: filePathUrl, error: nil)
-            
-            //enabling to change rate of audio playing
-            audioPlayer.enableRate = true
-            
-        }else{
-            print("File path is empty")
-        }
-        // Do any additional setup after loading the view.
+        //Initialing audioplayer with filepath and enabling rate to change speed
+        audioPlayer = AVAudioPlayer(contentsOfURL: recieveRecordedAudio.filePathUrl, error: nil)
+        audioPlayer.enableRate = true
     }
 
     override func didReceiveMemoryWarning() {
