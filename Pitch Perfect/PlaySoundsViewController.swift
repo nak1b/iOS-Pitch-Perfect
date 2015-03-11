@@ -12,6 +12,7 @@ import AVFoundation
 class PlaySoundsViewController: UIViewController {
     
     var audioPlayer:AVAudioPlayer!
+    var recieveRecordedAudio: RecordedAudio!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Pj3-cq-Pny">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -39,7 +40,6 @@
                                 </state>
                                 <connections>
                                     <action selector="stopRecording:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="U9P-We-pVG"/>
-                                    <segue destination="XCZ-sR-72b" kind="show" id="HZW-tq-NfD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,6 +88,7 @@
                         <outlet property="recordButton" destination="mS5-De-rGI" id="nYz-rm-Wkd"/>
                         <outlet property="recordingInProgress" destination="ZJI-OY-rS8" id="PxE-xK-eqs"/>
                         <outlet property="stopButton" destination="kop-eg-aPQ" id="NOz-3z-ML8"/>
+                        <segue destination="XCZ-sR-72b" kind="show" identifier="stopRecording" id="0KO-CJ-Vpk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -150,12 +151,12 @@
                                 <exclude reference="NYD-aq-dRR"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="WOn-mK-sM6"/>
                                 <exclude reference="26B-D6-J4V"/>
                                 <exclude reference="8xH-R2-p5S"/>
+                                <exclude reference="dSA-5A-8oB"/>
                                 <exclude reference="Abx-pW-e99"/>
                                 <exclude reference="ONb-3z-DlE"/>
-                                <exclude reference="dSA-5A-8oB"/>
-                                <exclude reference="WOn-mK-sM6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -165,12 +166,12 @@
                                 <include reference="NYD-aq-dRR"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="WOn-mK-sM6"/>
                                 <include reference="26B-D6-J4V"/>
                                 <include reference="8xH-R2-p5S"/>
+                                <include reference="dSA-5A-8oB"/>
                                 <include reference="Abx-pW-e99"/>
                                 <include reference="ONb-3z-DlE"/>
-                                <include reference="dSA-5A-8oB"/>
-                                <include reference="WOn-mK-sM6"/>
                             </mask>
                         </variation>
                     </view>
