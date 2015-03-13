@@ -134,6 +134,15 @@
                                     <action selector="playSlowAudio:" destination="XCZ-sR-72b" eventType="touchUpInside" id="ZxI-CF-PWu"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eue-Pu-xPb">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="chipmunk">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="XCZ-sR-72b" eventType="touchUpInside" id="7R0-GL-coI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -142,21 +151,26 @@
                             <constraint firstItem="oXK-vu-KQh" firstAttribute="top" secondItem="4pf-xj-75q" secondAttribute="bottom" constant="50" id="Abx-pW-e99"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oXK-vu-KQh" secondAttribute="trailing" constant="25" id="ONb-3z-DlE"/>
                             <constraint firstItem="L2f-7e-Hbl" firstAttribute="top" secondItem="Y7S-3z-3oY" secondAttribute="bottom" constant="85" id="WOn-mK-sM6"/>
+                            <constraint firstItem="Eue-Pu-xPb" firstAttribute="top" secondItem="NYD-aq-dRR" secondAttribute="bottom" constant="36" id="ZBP-kB-Cyl"/>
                             <constraint firstAttribute="centerX" secondItem="Y7S-3z-3oY" secondAttribute="centerX" id="dSA-5A-8oB"/>
+                            <constraint firstItem="Eue-Pu-xPb" firstAttribute="leading" secondItem="76n-R7-9mP" secondAttribute="leadingMargin" constant="25" id="n3W-C6-A2b"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="oXK-vu-KQh"/>
                                 <exclude reference="Y7S-3z-3oY"/>
                                 <exclude reference="NYD-aq-dRR"/>
+                                <exclude reference="Eue-Pu-xPb"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="WOn-mK-sM6"/>
                                 <exclude reference="26B-D6-J4V"/>
                                 <exclude reference="8xH-R2-p5S"/>
-                                <exclude reference="dSA-5A-8oB"/>
+                                <exclude reference="ZBP-kB-Cyl"/>
+                                <exclude reference="n3W-C6-A2b"/>
                                 <exclude reference="Abx-pW-e99"/>
                                 <exclude reference="ONb-3z-DlE"/>
+                                <exclude reference="dSA-5A-8oB"/>
+                                <exclude reference="WOn-mK-sM6"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -164,14 +178,17 @@
                                 <include reference="oXK-vu-KQh"/>
                                 <include reference="Y7S-3z-3oY"/>
                                 <include reference="NYD-aq-dRR"/>
+                                <include reference="Eue-Pu-xPb"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="WOn-mK-sM6"/>
                                 <include reference="26B-D6-J4V"/>
                                 <include reference="8xH-R2-p5S"/>
-                                <include reference="dSA-5A-8oB"/>
+                                <include reference="ZBP-kB-Cyl"/>
+                                <include reference="n3W-C6-A2b"/>
                                 <include reference="Abx-pW-e99"/>
                                 <include reference="ONb-3z-DlE"/>
+                                <include reference="dSA-5A-8oB"/>
+                                <include reference="WOn-mK-sM6"/>
                             </mask>
                         </variation>
                     </view>
@@ -200,6 +217,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
