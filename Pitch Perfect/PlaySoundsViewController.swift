@@ -80,6 +80,9 @@ class PlaySoundsViewController: UIViewController {
         playAudioWithVariablePitch(1000)
         
     }
+    @IBAction func playDarthVanderAudio(sender: UIButton) {
+        playAudioWithVariablePitch(-1000)
+    }
     @IBAction func stopSounds(sender: UIButton) {
         //stop playing sounds
         audioPlayer.stop()

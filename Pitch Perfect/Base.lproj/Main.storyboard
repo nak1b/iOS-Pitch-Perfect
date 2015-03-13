@@ -143,17 +143,28 @@
                                     <action selector="playChipmunkAudio:" destination="XCZ-sR-72b" eventType="touchUpInside" id="7R0-GL-coI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D92-zC-oTy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="darthvander">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playDarthVanderAudio:" destination="XCZ-sR-72b" eventType="touchUpInside" id="SqZ-nv-nCy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NYD-aq-dRR" firstAttribute="leading" secondItem="76n-R7-9mP" secondAttribute="leadingMargin" constant="25" id="26B-D6-J4V"/>
                             <constraint firstItem="NYD-aq-dRR" firstAttribute="top" secondItem="4pf-xj-75q" secondAttribute="bottom" constant="50" id="8xH-R2-p5S"/>
                             <constraint firstItem="oXK-vu-KQh" firstAttribute="top" secondItem="4pf-xj-75q" secondAttribute="bottom" constant="50" id="Abx-pW-e99"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="D92-zC-oTy" secondAttribute="trailing" constant="25" id="Bi9-LT-nAQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oXK-vu-KQh" secondAttribute="trailing" constant="25" id="ONb-3z-DlE"/>
                             <constraint firstItem="L2f-7e-Hbl" firstAttribute="top" secondItem="Y7S-3z-3oY" secondAttribute="bottom" constant="85" id="WOn-mK-sM6"/>
                             <constraint firstItem="Eue-Pu-xPb" firstAttribute="top" secondItem="NYD-aq-dRR" secondAttribute="bottom" constant="36" id="ZBP-kB-Cyl"/>
                             <constraint firstAttribute="centerX" secondItem="Y7S-3z-3oY" secondAttribute="centerX" id="dSA-5A-8oB"/>
                             <constraint firstItem="Eue-Pu-xPb" firstAttribute="leading" secondItem="76n-R7-9mP" secondAttribute="leadingMargin" constant="25" id="n3W-C6-A2b"/>
+                            <constraint firstItem="D92-zC-oTy" firstAttribute="top" secondItem="oXK-vu-KQh" secondAttribute="bottom" constant="36" id="try-aM-mjw"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -161,6 +172,7 @@
                                 <exclude reference="Y7S-3z-3oY"/>
                                 <exclude reference="NYD-aq-dRR"/>
                                 <exclude reference="Eue-Pu-xPb"/>
+                                <exclude reference="D92-zC-oTy"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="26B-D6-J4V"/>
@@ -169,6 +181,8 @@
                                 <exclude reference="n3W-C6-A2b"/>
                                 <exclude reference="Abx-pW-e99"/>
                                 <exclude reference="ONb-3z-DlE"/>
+                                <exclude reference="Bi9-LT-nAQ"/>
+                                <exclude reference="try-aM-mjw"/>
                                 <exclude reference="dSA-5A-8oB"/>
                                 <exclude reference="WOn-mK-sM6"/>
                             </mask>
@@ -179,6 +193,7 @@
                                 <include reference="Y7S-3z-3oY"/>
                                 <include reference="NYD-aq-dRR"/>
                                 <include reference="Eue-Pu-xPb"/>
+                                <include reference="D92-zC-oTy"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="26B-D6-J4V"/>
@@ -187,6 +202,8 @@
                                 <include reference="n3W-C6-A2b"/>
                                 <include reference="Abx-pW-e99"/>
                                 <include reference="ONb-3z-DlE"/>
+                                <include reference="Bi9-LT-nAQ"/>
+                                <include reference="try-aM-mjw"/>
                                 <include reference="dSA-5A-8oB"/>
                                 <include reference="WOn-mK-sM6"/>
                             </mask>
@@ -218,6 +235,7 @@
     </scenes>
     <resources>
         <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvander" width="100" height="100"/>
         <image name="kangaroo" width="100" height="100"/>
         <image name="microphone" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
